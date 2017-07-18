@@ -21,7 +21,7 @@ fi
 
 echo -e "Installing kitchen.ci using Bundler\n"
 
-bundle install --force
+bundle install --force --path vendor/cache
 
 if [[ $? == 0 ]]; then
   echo "Successfully installed test-kitchen with bundler"
